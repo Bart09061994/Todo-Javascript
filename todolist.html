@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <title>To Do List</title>
+  </head>
+  <body class="dark-theme">
+    <div class="d-flex justify-content-center" id="cambia-tema">
+      <button id="change-theme" class="btn btn-outline-light">
+        Cambia Tema
+      </button>
+    </div>
+    <div class="container py-5 h-100">
+      <div
+        class="row d-flex justify-content-center align-items-center"
+        id="container">
+        <div class="col col-lg-9 col-xl-7">
+          <div class="card-body p-4">
+            <h1 class="text-center my-3 pb-3 title-text">ToDo List</h1>
+            <input
+              class="form-control mb-4 pb-2"
+              type="text"
+              name="new-task"
+              id="new-task"
+              placeholder="Aggiungi la tua nuova attività" />
+            <div id="btn-primary">
+              <button id="add-btn" class="btn btn-primary">Aggiungi</button>
+            </div>
+            <div id="new-list">
+              <ul id="list-task"></ul>
+            </div>
+            <footer class="d-flex justify-content-center">
+              <button id="complete-all" class="btn btn-outline-success">
+                Completa Tutto
+              </button>
+              <button id="remove-all" class="btn btn-outline-danger">
+                Elimina Tutto
+              </button>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

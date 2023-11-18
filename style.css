@@ -1,0 +1,99 @@
+.task-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.task-text {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+#list-task {
+    margin-top: 2rem;
+}
+
+#new-list, #container {
+    overflow-y: auto;
+    max-height: auto;
+}
+
+.card-body {
+    height: 500px;
+}
+
+h1,
+.task-text {
+    color: #fff;
+}
+
+
+.task-item.completed .task-text {
+    text-decoration: line-through;
+    color: #555;
+}
+
+.task-item.completed .complete-btn {
+    background-color: #7dd56f;
+}
+
+
+/* BTN */
+
+
+.complete-btn,
+.delete-btn,
+.edit-btn {
+    padding: 5px 10px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 3rem;
+}
+
+.complete-btn {
+    background-color: green;
+}
+
+.delete-btn {
+    background-color: red;
+}
+
+.edit-btn {
+    background-color: darkorange;
+}
+
+.dark-theme {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.dark-theme .title-text {
+    color: #ffffff;
+}
+
+.light-theme .title-text {
+    color: #000000;
+}
+
+.dark-theme .task-text {
+    color: #ffffff;
+}
+
+.light-theme .task-text {
+    color: #000000;
+}
+
+.dark-theme .task-item.completed .task-text {
+    color: #555555;
+}
+
+.light-theme .task-item.completed .task-text {
+    color: #555555;
+}
